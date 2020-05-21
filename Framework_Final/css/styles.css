@@ -1,0 +1,115 @@
+body,
+ul,
+li,
+a,
+p,
+div,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.table-01 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.table-02 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.table-02 th,
+.table-02 td {
+  border-bottom: 1px solid #bbb8b8;
+}
+
+.table-03 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.table-03 tr:nth-child(even) {
+  background-color: #d6d3d3;
+}
+
+.clearfix::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.item-left {
+  float: left;
+  margin: 5px;
+}
+
+.item-right {
+  float: right;
+  margin: 5px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+/*nav bar*/
+.navbar-base, .navbar-dark {
+  padding: .5em;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar-base nav, .navbar-dark nav {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar-base a, .navbar-dark a {
+  color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.navbar-base ul, .navbar-dark ul {
+  padding: 0;
+}
+
+.navbar-base .header-nav-item, .navbar-dark .header-nav-item {
+  width: 100%;
+  margin: 0;
+  display: inline;
+}
+
+.navbar-base .header-nav-link, .navbar-dark .header-nav-link {
+  padding: .5em;
+}
+
+.navbar-base li a:active, .navbar-dark li a:active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar-base li a:hover, .navbar-dark li a:hover {
+  background-color: #443322;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.navbar-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar-dark a {
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

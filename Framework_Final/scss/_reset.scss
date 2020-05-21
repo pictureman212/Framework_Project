@@ -1,95 +1,92 @@
-#{
-  margin: 0;
+
+body,
+ul,
+li,
+a,
+p,
+div,
+span {
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  display: block;
-  box-sizing: border-box;
-  line-height: 1;
-  list-style: none
-  border-collapse: collapse;
-  border-spacing: 0;
-  text-decoration: none;
+  margin: 0;
 }
 
 
 
 // No print
 
-@media print {
-  .noPrint {
-    display: none;
-  }
-}
+// @media print {
+//   .noPrint {
+//     display: none;
+//   }
+// }
 
-//text styling
-.heading-01 {
-  font-size: 4.6rem;
-  color: $headColor-01;
-}
+// // //text styling
+// // .heading-01 {
+// //   font-size: 4.6rem;
+// //   color: $headColor-01;
+// // }
 
-.heading-02 {
-  font-size: 3.6rem;
-  color: $headColor-02;
-}
+// // .heading-02 {
+// //   font-size: 3.6rem;
+// //   color: $headColor-02;
+// // }
 
-.heading-03 {
-  font-size: 2.8rem;
-  color: $headColor-03;
-}
+// // .heading-03 {
+// //   font-size: 2.8rem;
+// //   color: $headColor-03;
+// // }
 
-.heading-04 {
-  font-size: 2.2rem;
-  color: $headColor-04;
-}
+// // .heading-04 {
+// //   font-size: 2.2rem;
+// //   color: $headColor-04;
+// // }
 
-.heading-02 {
-  font-size: 1.8rem;
-  color: $headColor-05;
-}
+// // .heading-02 {
+// //   font-size: 1.8rem;
+// //   color: $headColor-05;
+// // }
 
-.heading-06 {
-  font-size: 1.6rem;
-  color: $headColor-06;
-}
+// // .heading-06 {
+// //   font-size: 1.6rem;
+// //   color: $headColor-06;
+// // }
 
-.text {
-  font-size: 1.6rem;
-  font-style: normal;
-  color: $main-color;
-}
+// // .text {
+// //   font-size: 1.6rem;
+// //   font-style: normal;
+// //   color: $main-color;
+// // }
 
-.bold {
-  font-weight: 700;
-}
+// .bold {
+//   font-weight: 700;
+// }
 
-.italic {
-  font-style: italic;
-}
+// .italic {
+//   font-style: italic;
+// }
 
-.cap {
-  text-transform: capitalize;
-}
+// .cap {
+//   text-transform: capitalize;
+// }
 
-.upper {
-  text-transform: uppercase;
-}
+// .upper {
+//   text-transform: uppercase;
+// }
 
-.lower {
-  text-transform: lowercase;
-}
+// .lower {
+//   text-transform: lowercase;
+// }
 
-//quotebox
+// //quotebox
 
-.quote-box {
-  padding: 10px;
-  border: $border-color;
-  background: $qouteBackground-color;
-  color: $quote-color;
-  font-style: italic;
-  text-align: center;
-}
+// .quote-box {
+//   padding: 10px;
+//   border: $border-color;
+//   background: $qouteBackground-color;
+//   color: $quote-color;
+//   font-style: italic;
+//   text-align: center;
+// }
 
 //table styling
 
@@ -120,7 +117,7 @@
   }
 }
 
-//clearfix
+// //clearfix
 
 .clearfix::after {
   content: " ";
@@ -130,7 +127,7 @@
   clear: both;
 }
 
-//floats
+// //floats
 
 .item-left {
   float: left;
@@ -142,7 +139,7 @@
   margin: 5px;
 }
 
-//images
+// //images
 
 .image {
   width: 100%;

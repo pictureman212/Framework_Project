@@ -1,0 +1,47 @@
+// For navbar sass
+/*nav bar*/
+.navbar-base {
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    nav {
+        list-style-type: none;
+          text-align: center;
+         }
+      a {
+        color: #555;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+      }
+      ul {         
+          padding: 0;
+      }
+      .header-nav-item{
+        width: 100%;
+        margin: 0;
+        display: inline;
+      }
+      .header-nav-link {
+          padding: .5em;
+      }
+      li a:active {
+          background-color: #4CAF50;
+          color: white;
+      }
+    
+      li a:hover {
+          background-color: #443322;
+          color: #f1f1f1;
+          text-decoration: none;
+      }
+}
+
+.navbar-dark {
+    @extend .navbar-base;
+    background-color: #000;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
