@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(240deg, rgb(70, 151, 243), rgb(183, 93, 243));
+}
+
+.parallax-container{
+  position: relative;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.intro-text{
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  position: absolute;
+}
+
+
+
+.basket{
+  height: 700px;
+  position: absolute:
+  top: 90%;
+  right: 10%;
+  transform: translate(-10%, 90
+  %);
+}
+
+.peach{
+  position:absolute;
+  height: 200px;
+  top: 10%;
+  right: 30%;
+}
+
+.apple{
+  position: absolute;
+  height: 100px;
+  top: 5%;
+  right: 20%;
+}
+
+section{
+  min-height: 100vh;
+  background: rgb(231, 147, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-fast,
+.parallax-faster,
+.parallax-fastest{
+  transition: ease;
+}
