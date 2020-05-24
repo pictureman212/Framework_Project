@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Contact Form</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>This is Sign Up Form Framework</h1>
+        </header>
+
+        <div class="page-content">
+            <!-- WELCOME CONTENT  -->
+            <div class="form-content">
+                <div class="form-contact">
+                    <h2>WELCOME</h2>
+                    <p class="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Et molestie ac feugiat sed. Diam volutpat commodo.
+                    </p>
+                    <div class="logIn-button">
+                        <input type="submit" name="submit" class="login" value="Log In">
+                    </div>
+                    <div class="social">
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class=" fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class=" fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class=" fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <!--INPUT SIGN UP  -->
+                <form class="form-information" action="#" method="post" id="myform">
+                    <h2>SIGN UP HERE</h2>
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" name="firstName" id="firstName" class="input-text" required
+                                placeholder=" ">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="form-row form-row-1">
+                            <label for="lastnName">Last Name *</label>
+                            <input type="text" name="lastName" id="lastName" class="input-text" required
+                                placeholder=" ">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="userName">User Name *</label>
+                        <input type="text" name="userName" id="Name" class="input-text" required placeholder=" ">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email *</label>
+                        <input type="text" name="mail" id="email" class="input-text" placeholder="name@example.com"
+                            pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required placeholder=" ">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="message">Must be a valid email address(name@example.com)</div>
+                    </div>
+                    <div class="form-row">
+                        <label for="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z].{8,}">Password *</label>
+                        <input type="password" id="password" class="input-text" name="password" required
+                            placeholder=" ">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="message">Your password must be at least 8 characters and contain 1 uppercas, 1
+                            lowcase
+                            and 1 number.</div>
+
+                    </div>
+                    <div class="form-row-last">
+                        <input type="submit" name="submit" class="submit-cButton" value="Sign Up">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </body>
+
+    </html>

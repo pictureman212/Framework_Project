@@ -1,0 +1,536 @@
+/* colors */
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap");
+/* icon */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+body {
+  background-color: #ccc;
+}
+
+body header {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Nunito", sans-serif;
+  color: #264653;
+}
+
+body h1 {
+  margin-top: 1em;
+  border-bottom: dotted 3px #fff;
+}
+
+.page-content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  background: #fff;
+  width: 900px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 175px 0;
+  position: relative;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 6px 0 0;
+  margin-bottom: 34px;
+}
+
+.form-content .form-contact {
+  background-color: #264653;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px 40px;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+.form-content .form-contact p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2px;
+}
+
+.form-content .form-contact .text-2 {
+  margin: 20px 0 25px;
+  font-weight: 700;
+}
+
+.form-content .form-contact .text-3 {
+  margin: 5px;
+}
+
+.form-content .form-contact .text-3 span {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.form-content .form-contact .text-3 span i {
+  margin-right: .5em;
+}
+
+.form-content .form-contact .logIn-button {
+  margin-top: 20px;
+}
+
+.form-content .form-contact .logIn-button .login {
+  width: 130px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.form-content .form-contact .social {
+  margin-top: 1rem;
+}
+
+.form-content .form-contact .social a {
+  padding: 0.4rem;
+  text-decoration: none;
+}
+
+.form-content .form-contact .social i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.form-content .form-contact .social i:hover {
+  color: #666;
+}
+
+.form-information {
+  padding: 20px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.form-information input[type=email],
+.form-information input[type=text],
+.form-information input[type=tel], .form-information input[type=password], .form-information textarea {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-information h2 {
+  color: #264653;
+}
+
+.form-information .form-group {
+  display: flex;
+  margin: 0 -8px;
+}
+
+.form-information .form-row {
+  width: 100%;
+  position: relative;
+}
+
+.form-information .form-row label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-information .form-row input {
+  width: 100%;
+  padding: 11.5px 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form-information .form-row-1 {
+  width: 100%;
+  padding: 0 8px;
+}
+
+.form-information .input-text {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  cursor: pointer;
+}
+
+.form-information .input-text:hover {
+  background-color: #ccc;
+  border-radius: 5px;
+  color: #666;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-information .form-checkbox p, .form-information .form-radio p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-information .form-checkbox label, .form-information .form-radio label {
+  font-size: 14px;
+  color: #666;
+}
+
+.form-information .form-dropDown {
+  margin-bottom: 15px;
+}
+
+.form-information .form-dropDown label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+}
+
+.form-information .form-dropDown #dropDown {
+  margin-left: .5em;
+  border: solid 1px #ccc;
+  width: 40%;
+  background: #264653;
+  color: #fff;
+  height: 2.5em;
+}
+
+.form-information .form-fieldset {
+  border: solid 1px #ccc;
+}
+
+.form-information .form-fieldset .form-legend {
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-information .form-fieldset i {
+  font-size: 7px;
+  margin: 7px;
+}
+
+.form-information .form-row-last {
+  margin: 10px 0 10px 0;
+}
+
+.form-information .form-row-last .submit-cButton {
+  background: #264653;
+  border-radius: 5px;
+  width: 130px;
+  border: none;
+  margin: 6px 0 50px 300px;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .form-content {
+    margin: 180px 20px;
+    flex-direction: column;
+  }
+  .form-contact {
+    width: auto;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .form-information {
+    padding: 30px 20px 30px 20px;
+    width: auto;
+  }
+  .form-textarea #message {
+    width: 100%;
+  }
+  .form-information .form-row-last .submit-cButton {
+    border-radius: 5px;
+    width: 130px;
+    border: none;
+    margin: 6px 0 50px 0px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .form-contact {
+    background-origin: none;
+  }
+  .form-group {
+    flex-direction: column;
+    margin: 0;
+  }
+  .form-row-1 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+input[type=email],
+input[type=text],
+input[type=password], input[type=tel] {
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  font-size: 1.5em;
+  border: 0;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus {
+  outline: 0;
+  background-color: #fff;
+}
+
+input[type=email]:focus + label,
+input[type=text]:focus + label,
+input[type=password]:focus + label {
+  opacity: 0;
+}
+
+input[type=email]:valid,
+input[type=text]:valid,
+input[type=password]:valid {
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}
+
+input[type=email]:valid + label,
+input[type=text]:valid + label,
+input[type=password]:valid + label, textarea:valid + label, textarea:valid + label {
+  opacity: 0;
+}
+
+input[type=email]:valid ~ i.fas.fa-check-circle,
+input[type=text]:valid ~ i.fas.fa-check-circle,
+input[type=password]:valid ~ i.fas.fa-check-circle {
+  opacity: 1;
+}
+
+input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:invalid:not(:focus):not(:placeholder-shown), input[type=password]:invalid:not(:focus):not(:placeholder-shown), textarea:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: rgba(253, 44, 0, 0.2);
+  padding-right: 25px;
+}
+
+input[type=text]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=email]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=password]:invalid:not(:focus):not(:placeholder-shown) + label, textarea:invalid:not(:focus):not(:placeholder-shown) {
+  opacity: 0;
+}
+
+input[type=text]:invalid:focus:not(:placeholder-shown) ~ .message,
+input[type=email]:invalid:focus:not(:placeholder-shown) ~ .message,
+input[type=password]:invalid:focus:not(:placeholder-shown) ~ .message {
+  max-height: 200px;
+  padding-bottom: 10px;
+}
+
+i.fas.fa-check-circle {
+  position: absolute;
+  top: 35%;
+  right: 15px;
+  font-size: 1.5em;
+  color: #264653;
+  opacity: 0;
+}
+
+.message {
+  color: #fd2c00;
+  font-style: italic;
+  max-height: 0;
+  transition: .25s;
+  overflow: hidden;
+}
+
+.page-logInContent {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page-logInContent .form-logIn {
+  background: #fff;
+  width: 650px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 175px 0;
+}
+
+.page-logInContent .form-row-login {
+  width: 100%;
+  position: relative;
+}
+
+.page-logInContent .form-row-login label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.page-logInContent .form-row-login input {
+  width: 100%;
+  padding: 11.5px 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+html, body, div, span,
+h1, h2, h3, p, address, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  display: block;
+  box-sizing: border-box;
+  line-height: 1;
+  list-style: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-decoration: none;
+}
+
+@media print {
+  .noPrint {
+    display: none;
+  }
+}
+
+.heading-01 {
+  font-size: 4.6rem;
+  color: #eee;
+}
+
+.heading-02 {
+  font-size: 3.6rem;
+  color: #ddd;
+}
+
+.heading-03 {
+  font-size: 2.8rem;
+  color: #aaa;
+}
+
+.heading-04 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.heading-02 {
+  font-size: 1.8rem;
+  color: #666;
+}
+
+.heading-06 {
+  font-size: 1.6rem;
+  color: #F5DFBB;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-style: normal;
+  color: #E9FFF9;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.quote-box {
+  padding: 10px;
+  border: #127475;
+  background: #0E9594;
+  color: #EEE8d6;
+  font-style: italic;
+  text-align: center;
+}
+
+.table-01 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.table-02 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.table-02 th,
+.table-02 td {
+  border-bottom: 1px solid #bbb8b8;
+}
+
+.table-03 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.table-03 tr:nth-child(even) {
+  background-color: #d6d3d3;
+}
+
+.clearfix::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.item-left {
+  float: left;
+  margin: 5px;
+}
+
+.item-right {
+  float: right;
+  margin: 5px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}

@@ -1,0 +1,151 @@
+
+html, body, div, span,
+h1, h2, h3, p,address,header{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1;
+    list-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-decoration: none;
+
+}
+  // No print
+  
+  @media print {
+    .noPrint {
+      display: none;
+    }
+  }
+  
+  //text styling
+  .heading-01 {
+    font-size: 4.6rem;
+    color: $headColor-01;
+  }
+  
+  .heading-02 {
+    font-size: 3.6rem;
+    color: $headColor-02;
+  }
+  
+  .heading-03 {
+    font-size: 2.8rem;
+    color: $headColor-03;
+  }
+  
+  .heading-04 {
+    font-size: 2.2rem;
+    color: $headColor-04;
+  }
+  
+  .heading-02 {
+    font-size: 1.8rem;
+    color: $headColor-05;
+  }
+  
+  .heading-06 {
+    font-size: 1.6rem;
+    color: $headColor-06;
+  }
+  
+  .text {
+    font-size: 1.6rem;
+    font-style: normal;
+    color: $main-color;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .cap {
+    text-transform: capitalize;
+  }
+  
+  .upper {
+    text-transform: uppercase;
+  }
+  
+  .lower {
+    text-transform: lowercase;
+  }
+  
+  //quotebox
+  
+  .quote-box {
+    padding: 10px;
+    border: $border-color;
+    background: $qouteBackground-color;
+    color: $quote-color;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  //table styling
+  
+  .table-01 {
+    text-align: left;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  .table-02 {
+    text-align: left;
+    padding: 10px;
+    overflow-x: auto;
+  
+    th,
+    td {
+      border-bottom: 1px solid rgb(187, 184, 184);
+    }
+  }
+  
+  .table-03 {
+    text-align: left;
+    padding: 10px;
+    overflow-x: auto;
+  
+    tr:nth-child(even) {
+      background-color: rgb(214, 211, 211);
+    }
+  }
+  
+  //clearfix
+  
+  .clearfix::after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  
+  //floats
+  
+  .item-left {
+    float: left;
+    margin: 5px;
+  }
+  
+  .item-right {
+    float: right;
+    margin: 5px;
+  }
+  
+  //images
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }

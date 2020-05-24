@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>This is Log In Form Framework</h1>
+    </header>
+    <div class="page-logInContent">
+        <div class="form-logn">
+            <form class="form-information" action="#" method="post">
+                <div class="form-row-login">
+                    <label for="userName">User Name</label>
+                    <input type="text" name="usertName" id="userName" class="input-text" required placeholder=" ">
+                </div>
+                <div class="form-row-login">
+                    <label for="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z].{8,}">Password</label>
+                    <input type="password" id="password" class="input-text" name="password" required placeholder=" ">
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container">
+                    <button type="button" class="cancel-button">Cancel</button>
+                    <span class="password">Forgot <a href="#">password?</a></span>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
