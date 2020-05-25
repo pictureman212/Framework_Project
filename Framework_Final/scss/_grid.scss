@@ -16,6 +16,9 @@
         padding: .5em 1em;
         margin-left: 2%;
         width: 23%;
+        @include bp-medium {
+            width: 48%;
+        }
         @include bp-small {
             width: 100%;
             margin: .5em 0;
@@ -24,14 +27,32 @@
     .column-2 {
         @extend .column-1;
         width: 48%;
+        @include bp-medium {
+            width: 48%;
+        }
+        @include bp-small {
+            width: 100%;
+            margin: .5em 0;
+        }
     }
     .column-3 {
         @extend .column-1;
         width: 73%;
+        @include bp-medium {
+            width: 48%;
+        }
+        @include bp-small {
+            width: 100%;
+            margin: .5em 0;
+        }
     }
     .column-4 {
         @extend .column-1;
         width: 98%;
+        @include bp-small {
+            width: 100%;
+            margin: .5em 0;
+        }
     }    
     .box-this {
         border: 1px solid #000;

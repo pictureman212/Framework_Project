@@ -158,6 +158,12 @@ span {
   width: 23%;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
+    width: 48%;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
     width: 100%;
@@ -169,12 +175,45 @@ span {
   width: 48%;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-row .column-2 {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .grid-row .column-2 {
+    width: 100%;
+    margin: .5em 0;
+  }
+}
+
 .grid-row .column-3 {
   width: 73%;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-row .column-3 {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .grid-row .column-3 {
+    width: 100%;
+    margin: .5em 0;
+  }
+}
+
 .grid-row .column-4 {
   width: 98%;
+}
+
+@media only screen and (max-width: 360px) {
+  .grid-row .column-4 {
+    width: 100%;
+    margin: .5em 0;
+  }
 }
 
 .grid-row .box-this {
