@@ -1,3 +1,12 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body,
 ul,
 li,
@@ -7,6 +16,7 @@ div,
 span {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .table-01 {
@@ -55,9 +65,19 @@ span {
 }
 
 .image {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.wrapper-100 {
   width: 100%;
-  height: auto;
-  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.wrapper-90 {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*nav bar*/
@@ -84,7 +104,6 @@ span {
 }
 
 .navbar-base .header-nav-item, .navbar-dark .header-nav-item {
-  width: 100%;
   margin: 0;
   display: inline;
 }
@@ -111,5 +130,131 @@ span {
 
 .navbar-dark a {
   color: #fff;
+}
+
+.grid-row {
+  width: 100%;
+  padding: 0 20px;
+  margin: .5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+}
+
+@media only screen and (max-width: 360px) {
+  .grid-row {
+    margin: 0 !important;
+  }
+}
+
+.grid-row :first-child {
+  margin: 0 !important;
+}
+
+.grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
+  float: left;
+  padding: .5em 1em;
+  margin-left: 2%;
+  width: 23%;
+}
+
+@media only screen and (max-width: 360px) {
+  .grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
+    width: 100%;
+    margin: .5em 0;
+  }
+}
+
+.grid-row .column-2 {
+  width: 48%;
+}
+
+.grid-row .column-3 {
+  width: 73%;
+}
+
+.grid-row .column-4 {
+  width: 98%;
+}
+
+.grid-row .box-this {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #666;
+}
+
+.grid-row ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.jumbotron-100 {
+  padding-top: .5em;
+  width: 100%;
+  height: 300px;
+  background-color: #666;
+}
+
+.jumbotron-100 h1 {
+  font-size: 3em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.header-big {
+  font-size: 3em;
+}
+
+.header-med {
+  font-size: 2em;
+}
+
+.header-sm {
+  font-size: 1.5em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=styles.css.map */

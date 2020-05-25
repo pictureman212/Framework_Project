@@ -1,2 +1,51 @@
-// for grid sass
+// for Grid and Flex
+.grid-row {
+    width: 100%;
+    padding: 0 20px;
+    margin: .5em;
+    box-sizing: border-box;
+    float: left;
+    @include bp-small {
+        margin: 0 !important;
+    }
+    :first-child {
+        margin: 0 !important;
+    }
+    .column-1 {
+        float: left;
+        padding: .5em 1em;
+        margin-left: 2%;
+        width: 23%;
+        @include bp-small {
+            width: 100%;
+            margin: .5em 0;
+        }
+    }
+    .column-2 {
+        @extend .column-1;
+        width: 48%;
+    }
+    .column-3 {
+        @extend .column-1;
+        width: 73%;
+    }
+    .column-4 {
+        @extend .column-1;
+        width: 98%;
+    }    
+    .box-this {
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: #666;
+    }
+    ::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
+.img-grid {
+    display: flex;
+    flex-direction: row;
+}

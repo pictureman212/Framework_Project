@@ -1,3 +1,12 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
 
 body,
 ul,
@@ -8,6 +17,7 @@ div,
 span {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 
@@ -142,7 +152,7 @@ span {
 // //images
 
 .image {
-  width: 100%;
-  height: auto;
-  border-radius: 3px;
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
 }
