@@ -80,6 +80,11 @@ span {
   margin: 0 auto;
 }
 
+.dark-background {
+  background-color: #666;
+  color: #fff;
+}
+
 /*nav bar*/
 .navbar-base, .navbar-dark {
   padding: .5em;
@@ -250,7 +255,6 @@ span {
 }
 
 .sidebar {
-  float: right;
   width: 100%;
 }
 
