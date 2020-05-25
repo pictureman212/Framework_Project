@@ -9,11 +9,14 @@ img {
   height: auto;
 }
 .carousel-container {
-  width: 1000px;
+  width: 700px;
   margin: auto;
   border: 3px solid rgb(85, 85, 85);
   overflow: hidden;
   position: relative;
+  @include bp-medium {
+      width: 300px;
+  }
 }
 
 .carousel-slide {

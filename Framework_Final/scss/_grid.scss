@@ -11,21 +11,38 @@
     :first-child {
         margin: 0 !important;
     }
-    .column-1 {
+    .column {
         float: left;
         padding: .5em 1em;
         margin-left: 2%;
+    }
+    .column-1 {
+        @extend .column;
         width: 23%;
+
         @include bp-medium {
             width: 48%;
+        &:nth-of-type(3) {
+            margin: 1em 0 0;
+        }
+        &:nth-of-type(4) {
+            margin: 1em 0 0 .5em;
+        }
+
         }
         @include bp-small {
             width: 100%;
             margin: .5em 0;
+            &:nth-of-type(3) {
+                margin: 0;
+            }
+            &:nth-of-type(4) {
+                margin: .5em 0;
+            }
         }
     }
     .column-2 {
-        @extend .column-1;
+        @extend .column;
         width: 48%;
         @include bp-medium {
             width: 48%;
@@ -36,7 +53,7 @@
         }
     }
     .column-3 {
-        @extend .column-1;
+        @extend .column;
         width: 73%;
         @include bp-medium {
             width: 48%;
@@ -47,7 +64,7 @@
         }
     }
     .column-4 {
-        @extend .column-1;
+        @extend .column;
         width: 98%;
         @include bp-small {
             width: 100%;

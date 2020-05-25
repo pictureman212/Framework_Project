@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usage</title>
     <link rel="stylesheet" href="./css/styles.min.css">
+    <script
+    src="https://kit.fontawesome.com/695a98c779.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
     <header>
@@ -54,6 +58,18 @@
         <h1 class="header-big">This is .header-big</h1>
         <h1 class="header-med">This is .header-med</h1>
         <h1 class="header-sm">This is .header-sm</h1>
+        <hr>
+        <h1 class="header-big text-center">Check out the image carousel</h1>
+        <div class="carousel-container">
+            <button class="previous-image"><i class="fas fa-angle-left"></i></button>
+            <button class="next-image"><i class="fas fa-angle-right"></i></button>
+            <div class="carousel-slide">
+              <img src="./images/01.jpg" alt="image" />
+              <img src="./images/02.jpg" alt="image" />
+              <img src="./images/03.jpg" alt="image" />
+              <img src="./images/04.jpg" alt="image" />
+            </div>
+          </div>
         <br>
         <div class="wrapper-100">
             <h1 class="header-big text-center">This is a grid example</h1>
@@ -96,8 +112,9 @@
                     </div>
                 </div>
             </div>
-            
         </div>
+
     </main>
+    <script src="./scripts/slideShow.js"></script>
 </body>
 </html>

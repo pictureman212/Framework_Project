@@ -70,6 +70,79 @@ span {
   height: auto !important;
 }
 
+.dark-background {
+  background-color: #666;
+  color: #fff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container {
+  width: 700px;
+  margin: auto;
+  border: 3px solid #555555;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-container {
+    width: 300px;
+  }
+}
+
+.carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.previous-image {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 4em;
+  color: white;
+  opacity: 0.2;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.previous-image:hover {
+  opacity: 0.5;
+}
+
+.next-image {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 4em;
+  color: white;
+  opacity: 0.3;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.next-image:hover {
+  opacity: 0.7;
+}
+
 .wrapper-100 {
   width: 100%;
   margin: 0 auto;
@@ -78,11 +151,6 @@ span {
 .wrapper-90 {
   width: 90%;
   margin: 0 auto;
-}
-
-.dark-background {
-  background-color: #666;
-  color: #fff;
 }
 
 /*nav bar*/
@@ -156,22 +224,37 @@ span {
   margin: 0 !important;
 }
 
-.grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
+.grid-row .column, .grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
   float: left;
   padding: .5em 1em;
   margin-left: 2%;
+}
+
+.grid-row .column-1 {
   width: 23%;
 }
 
 @media only screen and (max-width: 600px) {
-  .grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
+  .grid-row .column-1 {
     width: 48%;
+  }
+  .grid-row .column-1:nth-of-type(3) {
+    margin: 1em 0 0;
+  }
+  .grid-row .column-1:nth-of-type(4) {
+    margin: 1em 0 0 .5em;
   }
 }
 
 @media only screen and (max-width: 360px) {
-  .grid-row .column-1, .grid-row .column-2, .grid-row .column-3, .grid-row .column-4 {
+  .grid-row .column-1 {
     width: 100%;
+    margin: .5em 0;
+  }
+  .grid-row .column-1:nth-of-type(3) {
+    margin: 0;
+  }
+  .grid-row .column-1:nth-of-type(4) {
     margin: .5em 0;
   }
 }
