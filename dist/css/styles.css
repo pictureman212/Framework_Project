@@ -242,6 +242,10 @@ body h1 {
   font-size: 15px;
 }
 
+.form-information .form-row-last .submit-cButton:hover {
+  background-color: #666;
+}
+
 @media screen and (max-width: 991px) {
   .form-content {
     margin: 180px 20px;
@@ -298,25 +302,26 @@ input[type=password], input[type=tel] {
 
 input[type=email]:focus,
 input[type=text]:focus,
-input[type=password]:focus {
+input[type=password]:focus, input[type=tel]:focus {
   outline: 0;
   background-color: #fff;
 }
 
 input[type=email]:focus + label,
 input[type=text]:focus + label,
-input[type=password]:focus + label {
+input[type=password]:focus + label, input[type=tel]:focus + label {
   opacity: 0;
 }
 
 input[type=email]:valid,
 input[type=text]:valid,
-input[type=password]:valid {
+input[type=password]:valid, input[type=tel]:valid {
   box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
 }
 
 input[type=email]:valid + label,
 input[type=text]:valid + label,
+input[type=tel]:valid + label,
 input[type=password]:valid + label, textarea:valid + label, textarea:valid + label {
   opacity: 0;
 }
@@ -327,18 +332,18 @@ input[type=password]:valid ~ i.fas.fa-check-circle {
   opacity: 1;
 }
 
-input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:invalid:not(:focus):not(:placeholder-shown), input[type=password]:invalid:not(:focus):not(:placeholder-shown), textarea:invalid:not(:focus):not(:placeholder-shown) {
+input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:invalid:not(:focus):not(:placeholder-shown), input[type=password]:invalid:not(:focus):not(:placeholder-shown), textarea:invalid:not(:focus):not(:placeholder-shown), input[type=tel]:invalid:not(:focus):not(:placeholder-shown) {
   background-color: rgba(253, 44, 0, 0.2);
   padding-right: 25px;
 }
 
-input[type=text]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=email]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=password]:invalid:not(:focus):not(:placeholder-shown) + label, textarea:invalid:not(:focus):not(:placeholder-shown) {
+input[type=text]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=email]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=password]:invalid:not(:focus):not(:placeholder-shown) + label, textarea:invalid:not(:focus):not(:placeholder-shown), input[type=tel]:invalid:not(:focus):not(:placeholder-shown) + label {
   opacity: 0;
 }
 
-input[type=text]:invalid:focus:not(:placeholder-shown) ~ .message,
-input[type=email]:invalid:focus:not(:placeholder-shown) ~ .message,
-input[type=password]:invalid:focus:not(:placeholder-shown) ~ .message {
+input[type=text]:invalid:focus:not(:placeholder-shown) ~ .form-message,
+input[type=email]:invalid:focus:not(:placeholder-shown) ~ .form-message,
+input[type=password]:invalid:focus:not(:placeholder-shown) ~ .form-message {
   max-height: 200px;
   padding-bottom: 10px;
 }
@@ -352,7 +357,7 @@ i.fas.fa-check-circle {
   opacity: 0;
 }
 
-.message {
+.form-message {
   color: #fd2c00;
   font-style: italic;
   max-height: 0;
@@ -361,40 +366,97 @@ i.fas.fa-check-circle {
 }
 
 .page-logInContent {
-  width: 400px;
-  height: auto;
-  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
 
 .page-logInContent .form-logIn {
-  background: #fff;
-  width: 650px;
+  background: #264653;
+  width: 500px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
-  margin: 175px 0;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.page-logInContent .form-row-login {
-  width: 100%;
+.page-logInContent .form-logIn-information {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.page-logInContent .form-logIn-information .form-row-logIn {
+  width: 80%;
   position: relative;
+  margin: 0 auto;
+  height: auto;
 }
 
-.page-logInContent .form-row-login label {
+.page-logInContent .form-logIn-information .form-row-logIn label {
   font-weight: 600;
   font-size: 15px;
-  color: #666;
+  color: #fff;
   display: block;
   margin-bottom: 8px;
+  padding-top: 10px;
 }
 
-.page-logInContent .form-row-login input {
+.page-logInContent .form-logIn-information .form-row-logIn input {
   width: 100%;
   padding: 11.5px 30px;
-  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
   font-size: 15px;
   box-sizing: border-box;
+}
+
+.page-logInContent .form-logIn-information .logIn-button {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page-logInContent .form-logIn-information .logIn-button button {
+  padding: 5px 35px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.page-logInContent .form-logIn-information .logIn-button button:hover {
+  background-color: #666;
+  border: none;
+}
+
+.page-logInContent .form-logIn-information label {
+  font-size: .75em;
+  color: #ccc;
+}
+
+.page-logInContent .logIn-cancel-button {
+  text-align: center;
+}
+
+.page-logInContent .logIn-cancel-button button {
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.page-logInContent .logIn-cancel-button button:hover {
+  background-color: #666;
+  border: none;
+}
+
+.page-logInContent .logIn-cancel-button span {
+  font-size: .75em;
+  color: #ccc;
+}
+
+.page-logInContent .logIn-cancel-button span a {
+  color: #ccc;
+}
+
+.page-logInContent .logIn-cancel-button span a:hover {
+  color: red;
 }
 
 html, body, div, span,

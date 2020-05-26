@@ -14,29 +14,29 @@
         <h1>This is Log In Form Framework</h1>
     </header>
     <div class="page-logInContent">
-        <div class="form-logn">
-            <form class="form-information" action="#" method="post">
-                <div class="form-row-login">
+        <div class="form-logIn">
+            <form class="form-logIn-information " action="#" method="post">
+                <div class="form-row-logIn">
                     <label for="userName">User Name</label>
                     <input type="text" name="usertName" id="userName" class="input-text" required placeholder=" ">
                 </div>
-                <div class="form-row-login">
+                <div class="form-row-logIn">
                     <label for="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z].{8,}">Password</label>
                     <input type="password" id="password" class="input-text" name="password" required placeholder=" ">
                 </div>
-                <div>
+                <div class="logIn-button">
                     <button type="submit">Login</button>
-                </div>
-                <div class="form-row">
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
+                    <div class="form-logIn-checkbox">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
                 </div>
 
-                <div class="container">
+                <div class="logIn-cancel-button">
                     <button type="button" class="cancel-button">Cancel</button>
                     <span class="password">Forgot <a href="#">password?</a></span>
-
+                </div>
             </form>
         </div>
     </div>

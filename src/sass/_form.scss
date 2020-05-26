@@ -163,7 +163,7 @@ body{
            color: #666;
        }
     }
-    //form-dropdown
+    //form-dropdown list
     .form-dropDown{
         margin-bottom: 15px;;
         label{
@@ -180,7 +180,7 @@ body{
             height: 2.5em;
         }
     }
-    //form-fieldset,.form-legend
+    //form-fieldset,form-legend
     .form-fieldset{
         border:solid 1px #ccc;
         .form-legend{
@@ -195,7 +195,6 @@ body{
             margin: 7px;           
         }
     }
-    // 
     
    // submit-button
     .form-row-last {
@@ -210,7 +209,10 @@ body{
 	cursor: pointer;
 	color: #fff;
 	font-weight: 700;
-	font-size: 15px;
+    font-size: 15px;
+    &:hover{
+        background-color: #666;
+    }
 }
     }
     
