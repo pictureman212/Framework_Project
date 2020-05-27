@@ -1,0 +1,19 @@
+.big-content {
+  width: 75vw;
+  // height: 100vh;
+  position: relative;
+
+  border: 1px solid #333;
+  margin: 3em;
+  text-align: center;
+}
+
+.example-box {
+  background-color: rgb(240, 147, 25);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgb(12, 12, 12);
+}

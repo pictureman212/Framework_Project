@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,AAAC,CACb,gBAAgB,CAAE,IAAI,CACtB,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../sass/backgrounds.scss"
+    ],
+    "names": [],
+    "file": "backgrounds.min.css"
+}
