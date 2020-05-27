@@ -1,88 +1,11 @@
 
-.page-content {
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.form-content  {
-	background: #fff;
-    margin: 175px 0;
-	position: relative;
-	display: flex;
-    h2{
-        font-weight: 700;
-        font-size: 30px;
-        padding: 6px 0 0;
-        margin-bottom: 34px;   
-    }
-    
-    //Form left-side(contact)
-    .form-contact{
-        background-color: #666;
-        padding: 20px 40px;
-        position: relative;
-        width: 100%;
-        color: #fff;
-        p{
-            font-size: 15px;
-	        font-weight: 300;
-            line-height: 1.5;
-            padding: 2px;           
-        }        
-        .text-2{
-            margin: 20px 0 25px;
-            font-weight: 700; 
-        }
-        .text-3{
-            margin: 5px;
-            span{
-                font-weight: 500; 
-                margin-bottom: 1em; 
-                i{
-                    margin-right: .5em;
-                } 
-            }
-        }
-        .logIn-button{
-            margin-top: 20px;       
-            .login{
-                width: 130px;
-                border: solid 1px #fff;
-                border-radius: 5px;
-                font-weight: 700;
-                font-size: 15px;
-                padding: 5px;
-            }            
-        }
-        .social{
-            margin-top: 1rem;
-            a{
-                padding: 0.4rem;
-                text-decoration: none;
-                        } 
-            i{
-                color: #fff;
-                font-size: 1.5em;;
-                &:hover{
-                    color: #666;              
-                }
-            } 
-        }
-    }
-}
-
-// Form right-side(input information)
 .form-information {
-    padding: 20px 40px;
+    padding: 20px;
 	position: relative;
-    width: 100%;
     input[type=email],
     input[type=text],
     input[type=tel],input[type=password],textarea {
     box-sizing: border-box;
-    outline: none;
 }
     .form-group{
         display: flex;
@@ -168,23 +91,22 @@
         }
     }
     
-   // submit-button
-    .form-row-last {
-    margin: 10px 0 10px 0;
-    .submit-cButton{
-	border-radius: 5px;
-	width: 130px;
-	border: solid 1px #ccc;
-    margin: 6px 0 50px 300px;
-    padding: 5px;
-	cursor: pointer;
-	font-weight: 700;
-    font-size: 15px;
-    &:hover{
-        background-color: #666;
-    }
-}
-    }
+//    // submit-button
+//     .form-row-last {
+//     margin: 10px 0 10px 0;
+//     .submit-cButton{
+// 	border-radius: 5px;
+// 	width: 130px;
+// 	border: solid 1px #ccc;
+//     padding: 5px;
+// 	cursor: pointer;
+// 	font-weight: 700;
+//     font-size: 15px;
+//     &:hover{
+//         background-color: #666;
+//     }
+// }
+//     }
 }
 
 //media query

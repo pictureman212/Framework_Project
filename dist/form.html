@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form class="form-information" action="#" method="post" id="myform">
+        <div class="form-group">
+            <div class="form-row form-row-1">
+                <label for="firstName">First Name *</label>
+                <input type="text" name="firstName" id="firstName" class="input-text" placeholder=" " required>
+            </div>
+            <div class="form-row form-row-1">
+                <label for="lastnName">Last Name *</label>
+                <input type="text" name="lastName" id="lastName" class="input-text" placeholder=" " required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-row form-row-1">
+                <label for="email">Email *</label>
+                <input type="text" name="mail" id="email" class="input-text" placeholder=" "
+                    pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required>
+            </div>
+            <div class="form-row form-row-1">
+                <label for="tel">Phone *</label>
+                <input type="tel" name="tel" id="tel" class="input-text" placeholder=" " maxlength="12"
+                    pattern="^\d{3}-\d{3}-\d{4}$" required>
+            </div>
+        </div>
+
+        <div class="form-row form-textarea">
+            <label for="message">Message</label>
+            <textarea rows="3" cols="70" name="message" id="message" class="input-text" placeholder=" "
+                required></textarea>
+        </div>
+
+        <fieldset class="form-fieldset">
+            <legend class="form-legend"> fieldset</legend>
+            <div class="form-checkbox">
+                <p> <i class="fas fa-circle"></i> Interested in checkbox: </p>
+                <input type="checkbox" name="check1" id="check1">
+                <label for="check1">Check 1</label>
+                <input type="checkbox" name="check2" id="check2" class="input-text">
+                <label for="turtle">Check 2</label>
+                <input type="checkbox" name="check3" id="check3" class="input-text">
+                <label for="check3">Check 3</label>
+            </div>
+
+            <div class="form-dropDown">
+                <label for="dropDown"> <i class="fas fa-circle"></i>Interseted in drop down list:</label>
+                <select name="dropDown" id="dropDown" required>
+                    <option value="null" class="dropDown-select">Select</option>
+                    <option value="seclect1" class="dropDown-select">seclect1</option>
+                    <option value="seclect2" class="dropDown-select">seclect2</option>
+                    <option value="seclect3" class="dropDown-select">seclect3</option>
+                    <option value="seclect4" disabled class="dropDown-select">seclect4</option>
+                </select>
+            </div>
+
+            <div class="form-radio">
+                <p><i class="fas fa-circle"></i>Yes or No question radio button:</p>
+                <input type="radio" id="yes" class="input-text" name="answer">
+                <label for="yes">YES</label>
+                <input type="radio" id="no" class="input-text" name="answer">
+                <label for="no">NO</label>
+            </div>
+        </fieldset>
+
+        <!-- <div class="form-row-last">
+            <input type="submit" name="submit" class="submit-cButton" value="Submit">
+        </div> -->
+    </form>
+</body>
+
+</html>
