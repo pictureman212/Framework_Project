@@ -23,7 +23,7 @@ input[type=password]:focus + label{
 input[type=email]:valid,
 input[type=text]:valid,
 input[type=password]:valid{
-    box-shadow: 0 0 10px rgba(0, 188,212,0.8);
+    box-shadow: 0 0 10px rgba(33, 46, 32, 0.925);
 }
 input[type=email]:valid + label,
 input[type=text]:valid + label,
