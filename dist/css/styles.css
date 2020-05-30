@@ -144,6 +144,140 @@
   }
 }
 
+input[type=email],
+input[type=text],
+input[type=password], input[type=tel] {
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  font-size: 1.5em;
+  border: 0;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus, input[type=tel]:focus {
+  outline: 0;
+  background-color: #fff;
+}
+
+input[type=email]:focus + label,
+input[type=text]:focus + label,
+input[type=password]:focus + label, input[type=tel]:focus + label {
+  opacity: 0;
+}
+
+input[type=email]:valid,
+input[type=text]:valid,
+input[type=password]:valid, input[type=tel]:valid {
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}
+
+input[type=email]:valid + label,
+input[type=text]:valid + label,
+input[type=tel]:valid + label,
+input[type=password]:valid + label, textarea:valid + label, textarea:valid + label {
+  opacity: 0;
+}
+
+input[type=email]:valid ~ i.fas.fa-check-circle,
+input[type=text]:valid ~ i.fas.fa-check-circle,
+input[type=password]:valid ~ i.fas.fa-check-circle {
+  opacity: 1;
+}
+
+input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:invalid:not(:focus):not(:placeholder-shown), input[type=password]:invalid:not(:focus):not(:placeholder-shown), textarea:invalid:not(:focus):not(:placeholder-shown), input[type=tel]:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: rgba(253, 44, 0, 0.2);
+  padding-right: 25px;
+}
+
+input[type=text]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=email]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=password]:invalid:not(:focus):not(:placeholder-shown) + label, textarea:invalid:not(:focus):not(:placeholder-shown), input[type=tel]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+input[type=text]:invalid:focus:not(:placeholder-shown) ~ .form-message,
+input[type=email]:invalid:focus:not(:placeholder-shown) ~ .form-message,
+input[type=password]:invalid:focus:not(:placeholder-shown) ~ .form-message {
+  max-height: 200px;
+  padding-bottom: 10px;
+}
+
+i.fas.fa-check-circle {
+  position: absolute;
+  top: 35%;
+  right: 15px;
+  font-size: 1.5em;
+  opacity: 0;
+}
+
+.form-message {
+  color: #fd2c00;
+  font-style: italic;
+  max-height: 0;
+  transition: .25s;
+  overflow: hidden;
+}
+
+.button-container {
+  margin: 50px;
+}
+
+.button-container h1 {
+  margin-bottom: 10px;
+}
+
+.button-container h2 {
+  padding: 20px 0;
+}
+
+.button-xsmall, .button-small, .button-large, .button-xlarge, .button-hover, .button-focus, .button-active, .button-normal, .button-shadow, .button-disabled {
+  margin: 15px 0;
+  padding: 8px 14px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #666;
+  outline: none;
+}
+
+.button-xsmall {
+  font-size: 70%;
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.button-large {
+  font-size: 110%;
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+.button-hover:hover {
+  background-color: blue;
+}
+
+.button-focus {
+  background-color: yellow;
+}
+
+.button-active:active {
+  background-color: red;
+}
+
+.button-shadow {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 html, body, div, span,
 h1, h2, h3, p, address, header {
   margin: 0;
