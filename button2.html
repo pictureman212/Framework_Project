@@ -1,0 +1,107 @@
+<html>
+  <script src="https://kit.fontawesome.com/b5b02bdb49.js" crossorigin="anonymous"></script>
+<style>
+ .btn {
+     
+     display: inline-block;
+     font-family: 15px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size-adjust: 0.58;
+     font-weight: lighter;
+ }  
+.button{
+    background-color: #000;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 5px;
+    
+  }
+.button1 {
+  height: 20px;
+}
+.button2 .buutton3 {
+  height: 30px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1 {font-size: 6px;}
+.button2 {font-size: 16px;}
+.button3 {font-size: 18px;}
+.button4 {font-size: 20px;}
+.button5 {font-size: 24px;}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active {
+   background-color: yellow;
+}
+.button:hover {
+  background-color: #009999;
+}
+.button:hover span {
+  padding-right: 25px;
+ background-color: #009999;
+ 
+}
+
+
+.input {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+}
+.submit {
+    color: black;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="btn"> 
+  <span><button class="button button1" style="vertical-align: middle">xtra small<click></button></span></div>
+<div class="btn">
+  <span><button class="button button2" style="vertical-align: middle">small<click></button></span></div> 
+<div class="btn">
+  <span><button class="button button3" style="vertical-align: middle">medium<click></button></span></div>
+<div class="btn">
+<button class="button button4" style="vertical-align: middle"><span>large / click Me</span><click></button></div>
+
+
+              
+<form>
+<input class="input" type="button" value="Click me" onclick="msg()">
+  </form>
+  
+
+  <script>
+  function msg() {
+    alert("Thank you for visiting!");
+  }
+  </script>
+
+
+</body>
+</html>
