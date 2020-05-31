@@ -8,16 +8,16 @@
     @include bp-small {
         margin: 0 !important;
     }
-    :first-child {
+    %column:first-child {
         margin: 0 !important;
     }
-    .column {
+    %column {
         float: left;
         // padding: .5em 1em;
         margin-left: 2%;
     }
     .column-1 {
-        @extend .column;
+        @extend %column;
         width: 23%;
 
         @include bp-medium {
@@ -42,7 +42,7 @@
         }
     }
     .column-2 {
-        @extend .column;
+        @extend %column;
         width: 48%;
         @include bp-medium {
             width: 48%;
@@ -53,7 +53,7 @@
         }
     }
     .column-3 {
-        @extend .column;
+        @extend %column;
         width: 73%;
         @include bp-medium {
             width: 48%;
@@ -64,7 +64,7 @@
         }
     }
     .column-4 {
-        @extend .column;
+        @extend %column;
         width: 98%;
         @include bp-small {
             width: 100%;

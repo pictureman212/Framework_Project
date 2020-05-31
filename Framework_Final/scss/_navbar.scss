@@ -73,14 +73,18 @@
     }
     .nav-toggle-label {
         position: absolute;
-        top: 46%;
+        top: 0;
         left: 0;
         margin-left: 1em;
         border: none;
         height: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
+    }
+    label>span {
+        :hover {
+            background-color: #888;
+        }
     }
     .nav-toggle-label span,
     .nav-toggle-label span::before,
@@ -91,6 +95,7 @@
         width: 2em;
         border-radius: 2px;
         position: relative;
+
     }
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
@@ -127,10 +132,13 @@
         list-style: none;
     }
     nav li {
-        margin: 1em .5em;
+        
+        display: block;
     }
     nav a {
+        display: block;
         color: #fff;
+        padding: 1em .5em;
         text-decoration: none;
         font-size: 1rem;
         text-transform: uppercase;
@@ -139,6 +147,7 @@
     }
     nav a:hover {
         color: #000;
+        background-color: #998;
     }
     .nav-toggle:checked ~ nav {
       transform: scale(1,1);
