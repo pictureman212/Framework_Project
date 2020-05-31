@@ -27,6 +27,14 @@
   font-weight: 700;
 }
 
+.raleway {
+  font-family: $raleway;
+}
+
+.open-sans {
+  font-family: $open-sans;
+}
+
 .italic {
   font-style: italic;
 }
@@ -41,4 +49,13 @@
 
 .lower {
   text-transform: lowercase;
+}
+
+.quote-box {
+  padding: 10px;
+  border: $dark;
+  background: $light;
+  color: $white;
+  font-style: italic;
+  text-align: center;
 }
