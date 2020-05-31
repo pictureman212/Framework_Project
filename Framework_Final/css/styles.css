@@ -96,6 +96,7 @@ hr {
   background-size: contain;
 }
 
+textarea,
 input[type=email],
 input[type=text],
 input[type=password], input[type=tel] {
@@ -108,6 +109,7 @@ input[type=password], input[type=tel] {
   border: 0;
 }
 
+textarea:focus,
 input[type=email]:focus,
 input[type=text]:focus,
 input[type=password]:focus {
@@ -115,12 +117,14 @@ input[type=password]:focus {
   background-color: #fff;
 }
 
+textarea:focus + label,
 input[type=email]:focus + label,
 input[type=text]:focus + label,
 input[type=password]:focus + label {
   opacity: 0;
 }
 
+textarea,
 input[type=email]:valid,
 input[type=text]:valid,
 input[type=password]:valid {
@@ -132,12 +136,6 @@ input[type=email]:valid + label,
 input[type=text]:valid + label,
 input[type=password]:valid + label, textarea:valid + label, textarea:valid + label {
   opacity: 0;
-}
-
-input[type=email]:valid ~ i.fas.fa-check-circle,
-input[type=text]:valid ~ i.fas.fa-check-circle,
-input[type=password]:valid ~ i.fas.fa-check-circle {
-  opacity: 1;
 }
 
 input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:invalid:not(:focus):not(:placeholder-shown), input[type=password]:invalid:not(:focus):not(:placeholder-shown), textarea:invalid:not(:focus):not(:placeholder-shown) {
@@ -199,6 +197,12 @@ button:disabled, .button-xsmall:disabled, .button-small:disabled, .button-large:
 .button-shadow {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button-dark {
+  background-color: black;
+  border: 1px solid gray;
+  color: white;
 }
 
 * {
@@ -331,6 +335,14 @@ img {
   text-decoration: none;
 }
 
+.navbar-full {
+  background-color: #9c9c9c;
+  padding: .5em;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
 .navbar-full :root {
   --background: rgba(211, 211, 211, .85);
 }
@@ -344,19 +356,6 @@ img {
 .navbar-full *, .navbar-full *::before, .navbar-full *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.navbar-full .more {
-  font-size: 1.5em;
-  font-weight: 900;
-}
-
-.navbar-full header {
-  background-color: #9c9c9c;
-  padding: .5em;
-  text-align: center;
-  width: 100%;
-  position: relative;
 }
 
 .navbar-full .nav-wrapper {
@@ -376,15 +375,47 @@ img {
 }
 
 .navbar-full .nav-toggle-label {
-  position: relative;
+  position: absolute;
+  top: 46%;
+  left: 0;
   margin-left: 1em;
   border: none;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar-full .nav-toggle-label span,
+.navbar-full .nav-toggle-label span::before,
+.navbar-full .nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.navbar-full .nav-toggle-label span::before,
+.navbar-full .nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.navbar-full .nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.navbar-full .nav-toggle-label span::after {
+  top: 7px;
 }
 
 .navbar-full .logo {

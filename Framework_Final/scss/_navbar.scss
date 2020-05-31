@@ -45,6 +45,11 @@
 }
 
 .navbar-full {
+    background-color: rgb(156, 156, 156);
+    padding: .5em;
+    text-align: center;
+    width: 100%;
+    position: relative;
     :root {
         --background: rgba(211, 211, 211, .85);
     }
@@ -57,18 +62,6 @@
     *, *::before, *::after {
         box-sizing: border-box;
     }
-    
-    .more {
-        font-size: 1.5em;
-        font-weight: 900;
-    }
-    header {
-        background-color: rgb(156, 156, 156);
-        padding: .5em;
-        text-align: center;
-        width: 100%;
-        position: relative;
-    }
     .nav-wrapper {
         display: flex;
         flex-direction: row-reverse;
@@ -79,11 +72,38 @@
         display: none;
     }
     .nav-toggle-label {
-        position: relative;
+        position: absolute;
+        top: 46%;
+        left: 0;
         margin-left: 1em;
         border: none;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    
+    }
+    .nav-toggle-label span::before{
+        bottom: 7px;
+    }
+    
+    .nav-toggle-label span::after{
+        top: 7px;
     }
     .logo {
         grid-column: 2 / 3;
@@ -131,6 +151,7 @@
     @media screen and (min-width: 700px) {
         .nav-toggle-label {display: none;
         }
+
         header {
             margin: 0;
     
