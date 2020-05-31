@@ -1,0 +1,52 @@
+button {
+    margin: 15px 0;
+    padding: 8px 14px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    &:hover {
+        background-color: #666;
+    }
+    &:active {
+        background-color: red;
+    }
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+    
+    //button sizes
+.button-xsmall {
+    @extend button;
+    font-size: 70%;
+}
+    
+.button-small {
+    @extend button;
+    font-size: 85%;
+}
+    
+.button-large {
+    @extend button;
+    font-size: 110%;
+}
+    
+.button-xlarge {
+    @extend button;
+    font-size: 125%;
+}
+    
+//button style
+.button-shadow{
+    box-shadow :0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button-dark {
+    background-color: black;
+    border: 1px solid gray;
+    color: white;
+}

@@ -1,0 +1,43 @@
+.sidebar {
+  width: 100%;
+  .sidebar-list {
+    //NOT DRY
+    list-style: none;
+    font-family: sans-serif;
+
+    .sidebar-item {
+      text-align: left;
+      cursor: pointer;
+      border-bottom: 1px solid rgb(206, 206, 206);
+      padding: 1em;
+      margin-top: 5px;
+      transition: all 0.3s ease-in-out;
+
+      //not DRY
+      a {
+        text-decoration: none;
+      }
+      .sidebar-headline {
+        font-size: 1em;
+        color: rgb(17, 17, 17);
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 100%;
+        display: block;
+      }
+
+      .sidebar-description {
+        font-size: 0.7em;
+        font-style: italic;
+        color: rgb(189, 187, 187);
+        display: block;
+      }
+    }
+
+    .sidebar-item:hover {
+      transform: scale(1.05, 1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+  }
+}

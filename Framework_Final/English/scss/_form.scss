@@ -1,0 +1,56 @@
+textarea,
+input[type=email],
+input[type=text],
+input[type=password],input[type=tel]{
+    margin: .5em 0;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+    font-size: 1.5em;
+    border: 0;
+}
+textarea:focus,
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus{
+    outline:0;
+    background-color: #fff;
+}
+textarea:focus + label,
+input[type=email]:focus + label,
+input[type=text]:focus + label,
+input[type=password]:focus + label{
+    opacity: 0;
+}
+
+textarea,
+input[type=email]:valid,
+input[type=text]:valid,
+input[type=password]:valid{
+    box-shadow: 0 0 10px rgba(33, 46, 32, 0.925);
+}
+
+input[type=email]:valid + label,
+input[type=text]:valid + label,
+input[type=password]:valid + label, textarea:valid + label, textarea:valid + label{
+    opacity: 0;
+}
+// input[type=email]:valid ~ i.fas.fa-check-circle,
+// input[type=text]:valid ~ i.fas.fa-check-circle,
+// input[type=password]:valid ~ i.fas.fa-check-circle{
+//     opacity: 1;
+// }
+input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:invalid:not(:focus):not(:placeholder-shown), input[type=password]:invalid:not(:focus):not(:placeholder-shown),textarea:invalid:not(:focus):not(:placeholder-shown){
+    background-color: rgba(253,44,0,.2);
+    padding-right: 25px;
+}
+  input[type=text]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=email]:invalid:not(:focus):not(:placeholder-shown) + label, input[type=password]:invalid:not(:focus):not(:placeholder-shown) + label, textarea:invalid:not(:focus):not(:placeholder-shown){
+    opacity: 0;
+}
+ input[type=text]:invalid:focus:not(:placeholder-shown) ~ .message,
+ input[type=email]:invalid:focus:not(:placeholder-shown) ~ .message, 
+ input[type=password]:invalid:focus:not(:placeholder-shown) ~ .message {
+  max-height: 200px;
+  padding-bottom: 10px;
+}

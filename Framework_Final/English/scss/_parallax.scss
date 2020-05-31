@@ -1,0 +1,12 @@
+.parallax-container {
+  position: relative;
+  z-index: -1000;
+  overflow: hidden;
+  background: rgb(27, 5, 221);
+}
+
+.parallax-fast,
+.parallax-faster,
+.parallax-fastest {
+  transition: ease;
+}

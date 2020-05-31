@@ -1,0 +1,61 @@
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+.header-big {
+    font-size: 3em;
+}
+
+.header-med {
+    font-size: 2em;
+}
+
+.header-sm {
+    font-size: 1.5em;
+}
+.bold {
+  font-weight: 700;
+}
+
+.raleway {
+  font-family: $raleway;
+}
+
+.open-sans {
+  font-family: $open-sans;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.quote-box {
+  padding: 10px;
+  border: $dark;
+  background: $light;
+  color: $white;
+  font-style: italic;
+  text-align: center;
+}
