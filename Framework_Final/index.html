@@ -11,50 +11,51 @@
   ></script>
 </head>
 <body>
-    <header>
-        <div class="jumbotron-100">
-            <div class="wrapper-90">
-                <h1>Totally big jumbotron-100</h1>
+    <main class="wrapper-100"></main>
+        <header>
+            <div class="jumbotron-100">
+                <div class="wrapper-90">
+                    <h1>Totally big jumbotron-100</h1>
+                </div>
             </div>
-        </div>
-        <nav class="navbar-dark">
-            <ul class="header-nav-list">
-                <li class="header-nav-item">
-                    <a class="header-nav-link " href="#">
-                        <span class="header-nav-link-content">
-                            Menu-Item-1
-                            <span class="header-nav-link-border"></span>
-                        </span>
-                    </a>
-                </li>
-                <li class="header-nav-item">
-                    <a class="header-nav-link " href="#">
-                        <span class="header-nav-link-content">
-                            Menu-Item-2
-                            <span class="header-nav-link-border"></span>
-                        </span>
-                    </a>
-                </li>
-                <li class="header-nav-item">
-                    <a class="header-nav-link " href="#">
-                        <span class="header-nav-link-content">
-                            Menu-Item-3
-                            <span class="header-nav-link-border"></span>
-                        </span>
-                    </a>
-                </li>
-                <li class="header-nav-item header-nav-item--guides">
-                    <a class="header-nav-link  js-toggle-simpleGuidesNav" href="#">
-                        <span class="header-nav-link-content">
-                            Menu-Item-4
-                            <span class="header-nav-link-border"></span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="wrapper-90">
+            <nav class="navbar-dark">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a class="header-nav-link " href="#">
+                            <span class="header-nav-link-content">
+                                Menu-Item-1
+                                <span class="header-nav-link-border"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link " href="#">
+                            <span class="header-nav-link-content">
+                                Menu-Item-2
+                                <span class="header-nav-link-border"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a class="header-nav-link " href="#">
+                            <span class="header-nav-link-content">
+                                Menu-Item-3
+                                <span class="header-nav-link-border"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="header-nav-item header-nav-item--guides">
+                        <a class="header-nav-link  js-toggle-simpleGuidesNav" href="#">
+                            <span class="header-nav-link-content">
+                                Menu-Item-4
+                                <span class="header-nav-link-border"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <div class="wrapper-90">
         <h1 class="header-big">This is .header-big</h1>
         <h1 class="header-med">This is .header-med</h1>
         <h1 class="header-sm">This is .header-sm</h1>
@@ -127,20 +128,20 @@
         <div class="wrapper-100">
             <hr>
             <div class="grid-row">
-                <div class="column-3">Used a 3 column spaced column and put the side bar in a 1 column spaced spot</div>
+                <div class="column-3 light-background">Used a 3 column spaced column and put the side bar in a 1 column spaced spot</div>
                     <div class="column-1">
                         <div class="sidebar">
                             <div class="sidebar-list">
                                 <div class="sidebar-item">
                                     <h1 class="sidebar-headline">This is a sidebar-headline</h1>
                                     <p class="sidebar-description">This is the sidebar-description with a <a href="#">link</a>.</p>
-                    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <form action="">
         <div class="grid-row">
             <div class="column-2"><label for="name">Name: </label><input type="text"></div>
             <div class="column-2"><label for="email">Email: </label><input type="email"></div>
@@ -148,6 +149,10 @@
         <div class="grid-row">
             <div class="column-4"><label for="test">TEST: </label><input type="text" name="" id=""></div>
         </div>
+        <button class="button-large">Submit</button>
+        </form>
+
+    </div>
     </main>
     <script src="./scripts/slideShow.js"></script>
 </body>

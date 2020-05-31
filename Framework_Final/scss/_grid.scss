@@ -95,13 +95,6 @@
         width: 25%;
         @include bp-medium {
             width: 50%;
-        &:nth-of-type(3) {
-            margin: 1em 0 0;
-        }
-        &:nth-of-type(4) {
-            margin: 1em 0 0 .5em;
-        }
-        
         }
         @include bp-small {
             width: 100%;

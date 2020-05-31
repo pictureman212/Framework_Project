@@ -47,5 +47,4 @@ input[type=text]:invalid:not(:focus):not(:placeholder-shown), input[type=email]:
  input[type=password]:invalid:focus:not(:placeholder-shown) ~ .message {
   max-height: 200px;
   padding-bottom: 10px;
-
 }

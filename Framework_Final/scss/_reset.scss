@@ -13,6 +13,9 @@ ul,
 li,
 a,
 p,
+h1, h2, h3, h4, h5,
+hr,
+table, th, td,
 div,
 span {
   padding: 0;
@@ -154,7 +157,7 @@ span {
 .image {
   width: auto;
   max-width: 100%;
-  height: auto !important;
+  height: auto;
 }
 
 // a few regular element styles
