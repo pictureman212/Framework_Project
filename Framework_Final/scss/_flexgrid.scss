@@ -1,0 +1,152 @@
+// for Grid and Flex
+.grid-row {
+    width: 100%;
+    padding: 0 20px;
+    margin: .5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    @include bp-small {
+        margin: 0 !important;
+    }
+    %column:first-child {
+        margin: 0 !important;
+    }
+    %column {
+        // float: left;
+        // padding: .5em 1em;
+        margin-left: 2%;
+    }
+    .column-1 {
+        @extend %column;
+        flex-basis: 23%;
+        max-width: 23%;
+
+        @include bp-medium {
+            flex-basis: 48%;
+            max-width: 48%;
+        &:nth-of-type(3) {
+            margin: .5em 0 0;
+        }
+        &:nth-of-type(4) {
+            margin: .5em 0 0 .5em;
+        }
+
+        }
+        @include bp-small {
+            flex-basis: 98%;
+            max-width: 98%;
+            margin: .5em 0;
+            &:nth-of-type(3) {
+                margin: 0;
+            }
+            &:nth-of-type(4) {
+                margin: .5em 0;
+            }
+        }
+    }
+    .column-2 {
+        @extend %column;
+        flex-basis: 48%;
+        max-width: 48%;
+        @include bp-small {
+            flex-basis: 98%;
+            max-width: 98%;
+            margin: .5em 0;
+        }
+    }
+    .column-3 {
+        @extend %column;
+        flex-basis: 73%;
+        max-width: 73%;
+        @include bp-medium {
+            flex-basis: 48%;
+            max-width: 48%;
+        }
+        @include bp-small {
+            flex-basis: 98%;
+            max-width: 98%;
+            margin: .5em 0;
+        }
+    }
+    .column-4 {
+        @extend %column;
+        flex-basis: 98%;
+        max-width: 98%;
+        @include bp-small {
+            margin: .5em 0;
+        }
+    }    
+    .box-this {
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: #666;
+    }
+}
+
+.grid-row-no-margins {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    @include bp-small {
+        margin: 0 !important;
+    }
+    .column-1 {
+        flex-basis: 25%;
+        max-width: 25%;
+        @include bp-medium {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        @include bp-small {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+    .column-2 {
+        flex-basis: 50%;
+        max-width: 50%;
+        @include bp-small {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+    .column-3 {
+        flex-basis: 75%;
+        max-width: 75%;
+        @include bp-medium {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        @include bp-small {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+    .column-4 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }    
+    .box-this {
+        border: 1px solid #000;
+        background-color: #666;
+    }
+}
+
+.img-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        padding: .5em;
+        width: calc(100% / 3);
+        @include bp-medium {
+            width: 50%;
+        }
+        @include bp-small {
+            width: 100%;
+        }
+    }
+}

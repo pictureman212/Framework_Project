@@ -1,87 +1,87 @@
 // for Grid and Flex
-.grid-row {
-    width: 100%;
-    padding: 0 20px;
-    margin: .5em;
-    box-sizing: border-box;
-    float: left;
-    @include bp-small {
-        margin: 0 !important;
-    }
-    %column:first-child {
-        margin: 0 !important;
-    }
-    %column {
-        float: left;
-        // padding: .5em 1em;
-        margin-left: 2%;
-    }
-    .column-1 {
-        @extend %column;
-        width: 23%;
+// .grid-row {
+//     width: 100%;
+//     padding: 0 20px;
+//     margin: .5em;
+//     box-sizing: border-box;
+//     float: left;
+//     @include bp-small {
+//         margin: 0 !important;
+//     }
+//     %column:first-child {
+//         margin: 0 !important;
+//     }
+//     %column {
+//         float: left;
+//         // padding: .5em 1em;
+//         margin-left: 2%;
+//     }
+//     .column-1 {
+//         @extend %column;
+//         width: 23%;
 
-        @include bp-medium {
-            width: 48%;
-        &:nth-of-type(3) {
-            margin: 1em 0 0;
-        }
-        &:nth-of-type(4) {
-            margin: 1em 0 0 .5em;
-        }
+//         @include bp-medium {
+//             width: 48%;
+//         &:nth-of-type(3) {
+//             margin: 1em 0 0;
+//         }
+//         &:nth-of-type(4) {
+//             margin: 1em 0 0 .5em;
+//         }
 
-        }
-        @include bp-small {
-            width: 100%;
-            margin: .5em 0;
-            &:nth-of-type(3) {
-                margin: 0;
-            }
-            &:nth-of-type(4) {
-                margin: .5em 0;
-            }
-        }
-    }
-    .column-2 {
-        @extend %column;
-        width: 48%;
-        @include bp-medium {
-            width: 48%;
-        }
-        @include bp-small {
-            width: 100%;
-            margin: .5em 0;
-        }
-    }
-    .column-3 {
-        @extend %column;
-        width: 73%;
-        @include bp-medium {
-            width: 48%;
-        }
-        @include bp-small {
-            width: 100%;
-            margin: .5em 0;
-        }
-    }
-    .column-4 {
-        @extend %column;
-        width: 98%;
-        @include bp-small {
-            width: 100%;
-            margin: .5em 0;
-        }
-    }    
-    .box-this {
-        border: 1px solid #000;
-        border-radius: 10px;
-        background-color: #666;
-    }
-    ::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
+//         }
+//         @include bp-small {
+//             width: 100%;
+//             margin: .5em 0;
+//             &:nth-of-type(3) {
+//                 margin: 0;
+//             }
+//             &:nth-of-type(4) {
+//                 margin: .5em 0;
+//             }
+//         }
+//     }
+//     .column-2 {
+//         @extend %column;
+//         width: 48%;
+//         @include bp-medium {
+//             width: 48%;
+//         }
+//         @include bp-small {
+//             width: 100%;
+//             margin: .5em 0;
+//         }
+//     }
+//     .column-3 {
+//         @extend %column;
+//         width: 73%;
+//         @include bp-medium {
+//             width: 48%;
+//         }
+//         @include bp-small {
+//             width: 100%;
+//             margin: .5em 0;
+//         }
+//     }
+//     .column-4 {
+//         @extend %column;
+//         width: 98%;
+//         @include bp-small {
+//             width: 100%;
+//             margin: .5em 0;
+//         }
+//     }    
+//     .box-this {
+//         border: 1px solid #000;
+//         border-radius: 10px;
+//         background-color: #666;
+//     }
+//     ::after {
+//         content: "";
+//         display: table;
+//         clear: both;
+//     }
+// }
 
 .grid-row-no-margins {
     width: 100%;
