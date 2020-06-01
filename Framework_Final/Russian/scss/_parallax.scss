@@ -1,0 +1,11 @@
+.параллакс-container {
+  position: relative;
+  // z-index: -1000;
+  overflow: hidden;
+}
+
+.параллакс-быстрый,
+.параллакс-быстрыйer,
+.параллакс-быстрыйest {
+  transition: ease;
+}

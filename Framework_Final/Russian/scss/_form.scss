@@ -1,0 +1,65 @@
+textarea,
+input[type="email"],
+input[type="text"],
+input[type="пароль"],
+input[type="tel"] {
+  margin: 0.5em 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  font-size: 1.5em;
+  border: 0;
+}
+textarea:focus,
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="пароль"]:focus {
+  outline: 0;
+  background-color: #fff;
+}
+textarea:focus + label,
+input[type="email"]:focus + label,
+input[type="text"]:focus + label,
+input[type="пароль"]:focus + label {
+  opacity: 0;
+}
+
+textarea,
+input[type="email"]:valid,
+input[type="text"]:valid,
+input[type="пароль"]:valid {
+  box-shadow: 0 0 10px rgba(33, 46, 32, 0.925);
+}
+
+input[type="email"]:valid + label,
+input[type="text"]:valid + label,
+input[type="пароль"]:valid + label,
+textarea:valid + label,
+textarea:valid + label {
+  opacity: 0;
+}
+// input[type=email]:valid ~ i.fas.fa-check-circle,
+// input[type=text]:valid ~ i.fas.fa-check-circle,
+// input[type=пароль]:valid ~ i.fas.fa-check-circle{
+//     opacity: 1;
+// }
+input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+input[type="пароль"]:invalid:not(:focus):not(:placeholder-shown),
+textarea:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: rgba(253, 44, 0, 0.2);
+  padding-right: 25px;
+}
+input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label,
+input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label,
+input[type="пароль"]:invalid:not(:focus):not(:placeholder-shown) + label,
+textarea:invalid:not(:focus):not(:placeholder-shown) {
+  opacity: 0;
+}
+input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .message,
+input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .message,
+input[type="пароль"]:invalid:focus:not(:placeholder-shown) ~ .message {
+  max-height: 200px;
+  padding-bottom: 10px;
+}

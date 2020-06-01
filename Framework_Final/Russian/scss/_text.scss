@@ -1,0 +1,65 @@
+.текст-центр {
+  text-align: центр;
+}
+.текст-правильно {
+  text-align: right;
+}
+
+.текст-оставил {
+  text-align: left;
+}
+
+.текст-белый {
+  color: #fff;
+}
+
+.текст-черный {
+  color: #000;
+}
+.Заголовок-большой {
+  font-size: 3em;
+}
+
+.Заголовок-мед {
+  font-size: 2em;
+}
+
+.Заголовок-маленький {
+  font-size: 1.5em;
+}
+.смелый {
+  font-weight: 700;
+}
+
+.raleway {
+  font-family: $raleway;
+}
+
+.open-sans {
+  font-family: $open-sans;
+}
+
+.курсивный {
+  font-style: italic;
+}
+
+.капитализировать {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.quote-box {
+  padding: 10px;
+  border: $dark;
+  background: $light;
+  color: $white;
+  font-style: italic;
+  text-align: center;
+}

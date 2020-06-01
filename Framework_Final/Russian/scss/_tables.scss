@@ -1,0 +1,37 @@
+.table-01 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table-02 {
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  overflow-x: auto;
+  border-spacing: 0;
+
+  th,
+  td {
+    border-bottom: 1px solid rgb(94, 92, 92);
+  }
+}
+
+.table-03 {
+  text-align: left;
+  padding: 10px;
+  overflow-x: auto;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+
+  tr:nth-child(even) {
+    background-color: rgb(214, 211, 211);
+  }
+
+  th {
+    padding: 1em;
+  }
+}

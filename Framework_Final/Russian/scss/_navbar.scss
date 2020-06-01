@@ -1,0 +1,221 @@
+// For navbar sass
+/*nav bar*/
+:root {
+  --background: rgba(211, 211, 211, 0.85);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.navbar-base {
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  nav {
+    list-style-type: none;
+    text-align: center;
+  }
+  a {
+    color: #555;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  ul {
+    padding: 0;
+  }
+  .header-nav-item {
+    margin: 0;
+    display: inline;
+  }
+  .header-nav-связь {
+    padding: 0.5em;
+  }
+  li a:active {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  li a:hover {
+    background-color: #443322;
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+}
+
+.нав-полный {
+  background-color: rgb(156, 156, 156);
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  :root {
+    --background: rgba(211, 211, 211, 0.85);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  .нав-обертка {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .нав-переключатель {
+    display: none;
+  }
+  .нав-переключатель-метка {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  метка > span {
+    :hover {
+      background-color: #888;
+    }
+  }
+  .нав-переключатель-метка span,
+  .нав-переключатель-метка span::before,
+  .нав-переключатель-метка span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  .нав-переключатель-метка span::before,
+  .нав-переключатель-метка span::after {
+    content: "";
+    position: absolute;
+  }
+  .нав-переключатель-метка span::before {
+    bottom: 7px;
+  }
+
+  .нав-переключатель-метка span::after {
+    top: 7px;
+  }
+  .логотип {
+    grid-column: 2 / 3;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    position: absolute;
+    text-align: left;
+    background: var(--background);
+    top: 100%;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: block;
+  }
+  nav a {
+    display: block;
+    color: #fff;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out 250ms;
+  }
+  nav a:hover {
+    color: #000;
+    background-color: #998;
+  }
+  .нав-переключатель:checked ~ nav {
+    transform: scale(1, 1);
+  }
+  .нав-переключатель:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+
+  @media screen and (min-width: 700px) {
+    .нав-переключатель-метка {
+      display: none;
+    }
+
+    header {
+      margin: 0;
+    }
+    .нав-обертка {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .логотип {
+      margin: 0;
+      grid-column: 1 / 3;
+      justify-self: flex-start;
+    }
+    nav {
+      all: unset;
+      grid-column: 3 / -1;
+      width: 100%;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    nav li {
+      margin: 0 0.4em;
+    }
+    nav a {
+      opacity: 1;
+      position: relative;
+    }
+    nav a::before {
+      content: "";
+      display: block;
+      height: 5px;
+      background: black;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: scale(0, 1);
+      transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.navbar-dark {
+  @extend .navbar-base;
+  background-color: #000;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}

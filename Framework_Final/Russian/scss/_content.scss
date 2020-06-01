@@ -1,0 +1,63 @@
+.big-content {
+  width: 75vw;
+  // height: 100vh;
+  position: relative;
+
+  border: 1px solid #333;
+  margin: 3em;
+  text-align: center;
+}
+
+.example-box {
+  background-color: rgb(240, 147, 25);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgb(12, 12, 12);
+}
+.code {
+  display: inline-block;
+}
+
+.par-ex01 {
+  position: absolute;
+  background-color: red($color: #000000);
+  top: 10%;
+  right: 70%;
+}
+
+.par-ex02 {
+  position: absolute;
+
+  top: 10%;
+  right: 40%;
+}
+
+.par-ex03 {
+  position: absolute;
+
+  top: 10%;
+  right: 10%;
+}
+
+.par-example-container {
+  display: flex;
+  height: 300px;
+  overflow: hidden;
+
+  background: rgb(236, 229, 120);
+}
+.instructions {
+  text-align: left;
+  font-size: 10px;
+}
+
+.image-example-container {
+  display: flex;
+}
+.image-example {
+  width: 30%;
+  margin-left: 15px;
+}

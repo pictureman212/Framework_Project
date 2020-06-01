@@ -1,0 +1,60 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.карусель-container {
+  width: 700px;
+  margin: auto;
+  border: 3px solid rgb(85, 85, 85);
+  overflow: hidden;
+  position: relative;
+  @include bp-medium {
+    width: 300px;
+  }
+}
+
+.карусель-slide {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.previous-image {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 4em;
+  color: white;
+  opacity: 0.2;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.previous-image:hover {
+  opacity: 0.5;
+}
+
+.next-image {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 4em;
+  color: white;
+  opacity: 0.3;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.next-image:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,166 @@
+// for Grid and Flex
+.Сетка-строка {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0.5em;
+  box-sizing: border-box;
+  float: left;
+  @include bp-small {
+    margin: 0 !important;
+  }
+  %колонка:first-child {
+    margin: 0 !important;
+  }
+  %колонка {
+    float: left;
+    // padding: .5em 1em;
+    margin-left: 2%;
+  }
+  .колонка-1 {
+    @extend %колонка;
+    width: 23%;
+
+    @include bp-medium {
+      width: 48%;
+      &:nth-of-type(3) {
+        margin: 1em 0 0;
+      }
+      &:nth-of-type(4) {
+        margin: 1em 0 0 0.5em;
+      }
+    }
+    @include bp-small {
+      width: 100%;
+      margin: 0.5em 0;
+      &:nth-of-type(3) {
+        margin: 0;
+      }
+      &:nth-of-type(4) {
+        margin: 0.5em 0;
+      }
+    }
+  }
+  .колонка-2 {
+    @extend %колонка;
+    width: 48%;
+    @include bp-medium {
+      width: 48%;
+    }
+    @include bp-small {
+      width: 100%;
+      margin: 0.5em 0;
+    }
+  }
+  .колонка-3 {
+    @extend %колонка;
+    width: 73%;
+    @include bp-medium {
+      width: 48%;
+    }
+    @include bp-small {
+      width: 100%;
+      margin: 0.5em 0;
+    }
+  }
+  .колонка-4 {
+    @extend %колонка;
+    width: 98%;
+    @include bp-small {
+      width: 100%;
+      margin: 0.5em 0;
+    }
+  }
+  .box-this {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #666;
+  }
+  ::after {
+    content: "";
+    display: hidden;
+    clear: both;
+  }
+}
+
+.Сетка-строка-no-margins {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  .колонка {
+    float: left;
+  }
+  .колонка-1 {
+    @extend .колонка;
+    width: 25%;
+    @include bp-medium {
+      width: 50%;
+    }
+    @include bp-small {
+      width: 100%;
+      // margin: .5em 0;
+      &:nth-of-type(3) {
+        margin: 0;
+      }
+      &:nth-of-type(4) {
+        margin: 0;
+      }
+    }
+  }
+  .колонка-2 {
+    @extend .колонка;
+    width: 50%;
+    @include bp-medium {
+      width: 50%;
+    }
+    @include bp-small {
+      width: 100%;
+      // margin: .5em 0;
+    }
+  }
+  .колонка-3 {
+    @extend .колонка;
+    width: 75%;
+    @include bp-medium {
+      width: 50%;
+    }
+    @include bp-small {
+      width: 100%;
+      // margin: .5em 0;
+    }
+  }
+  .колонка-4 {
+    @extend .колонка;
+    width: 100%;
+    @include bp-small {
+      width: 100%;
+      // margin: .5em 0;
+    }
+  }
+
+  .box-this {
+    border: 1px solid #000;
+    background-color: #666;
+  }
+  ::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.img-сетка {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    padding: 0.5em;
+    width: calc(100% / 3);
+    @include bp-medium {
+      width: 50%;
+    }
+    @include bp-small {
+      width: 100%;
+    }
+  }
+}

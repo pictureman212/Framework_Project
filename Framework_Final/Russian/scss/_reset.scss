@@ -1,0 +1,66 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+hr,
+table,
+th,
+td,
+div,
+span {
+  padding: 0;
+  margin: 0;
+  font-family: $open-sans;
+}
+
+// //clearfix
+
+.clearfix::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+// //floats
+
+.Пункт-левый {
+  float: left;
+  margin: 5px;
+}
+
+.Пункт-правый {
+  float: right;
+  margin: 5px;
+}
+
+// //images
+
+.образ {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+// a few regular element styles
+
+hr {
+  margin: 1em 0;
+}
