@@ -13,41 +13,20 @@ ul,
 li,
 a,
 p,
-h1, h2, h3, h4, h5,
+h1,
+h2,
+h3,
+h4,
+h5,
 hr,
-table, th, td,
+table,
+th,
+td,
 div,
 span {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-}
-
-.table-01 {
-  text-align: left;
-  padding: 10px;
-  overflow-x: auto;
-}
-
-.table-02 {
-  text-align: left;
-  padding: 10px;
-  overflow-x: auto;
-}
-
-.table-02 th,
-.table-02 td {
-  border-bottom: 1px solid #bbb8b8;
-}
-
-.table-03 {
-  text-align: left;
-  padding: 10px;
-  overflow-x: auto;
-}
-
-.table-03 tr:nth-child(even) {
-  background-color: #d6d3d3;
 }
 
 .clearfix::after {
@@ -664,7 +643,7 @@ img {
 
 .grid-row ::after {
   content: "";
-  display: table;
+  display: hidden;
   clear: both;
 }
 
@@ -914,12 +893,15 @@ img {
   padding: 10px;
   overflow-x: auto;
   width: 100%;
+  border-spacing: 0;
 }
 
 .table-02 {
   text-align: left;
   padding: 10px;
+  width: 100%;
   overflow-x: auto;
+  border-spacing: 0;
 }
 
 .table-02 th,
@@ -933,6 +915,7 @@ img {
   overflow-x: auto;
   width: 100%;
   text-align: center;
+  border-spacing: 0;
 }
 
 .table-03 tr:nth-child(even) {
@@ -945,9 +928,7 @@ img {
 
 .parallax-container {
   position: relative;
-  z-index: -1000;
   overflow: hidden;
-  background: #1b05dd;
 }
 
 .parallax-fast,
@@ -982,20 +963,20 @@ img {
 .par-ex01 {
   position: absolute;
   background-color: 0;
-  top: 90%;
-  right: 10%;
+  top: 10%;
+  right: 70%;
 }
 
 .par-ex02 {
   position: absolute;
   top: 10%;
-  right: 30%;
+  right: 40%;
 }
 
 .par-ex03 {
   position: absolute;
-  top: 5%;
-  right: 20%;
+  top: 10%;
+  right: 10%;
 }
 
 .par-example-container {

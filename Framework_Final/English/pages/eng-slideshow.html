@@ -11,61 +11,41 @@
     <title>Rabassa</title>
   </head>
   <body>
-    <header class="heading">
-      <div class="top-container">
-        <h1>RABASSA</h1>
-        <p>Be heard, in any language</p>
-      </div>
-
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
-              <span class="header-nav-link-content">
-                English
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
-              <span class="header-nav-link-content">
-                Espanol
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
-              <span class="header-nav-link-content">
-                Pусский
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-          <li class="header-nav-item header-nav-item--guides">
-            <a class="header-nav-link js-toggle-simpleGuidesNav" href="#">
-              <span class="header-nav-link-content">
-                한국어
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav">
-        <div class="menu">
-          <a href="#"> <i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"> <i class="fab fa-youtube"></i></a>
+    <header class="navbar-full">
+      <div class="nav-wrapper">
+        <div class="logo raleway">
+          <h1>Rabassa</h1>
+          <p>Tell your story, in any language</p>
         </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul>
+            <li class="link"><a href="#">English</a></li>
+            <li class="link"><a href="#">Espanol</a></li>
+            <li class="link"><a href="#">Pусский</a></li>
+            <li class="link"><a href="#">한국어</a></li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <!-- <span class="more">...</span> -->
+          <span></span>
+        </label>
       </div>
     </header>
 
     <!-- Main content -->
 
-    <main class="flexible-container">
+    <main class="grid-row">
       <nav class="sidebar column-1">
         <ul class="sidebar-list">
           <li class="sidebar-item">
@@ -170,12 +150,34 @@
           </li>
         </ul>
       </nav>
-      <div class="big-content column-2">
+      <div class="column-3">
         <h3>Slideshow for your images</h3>
         <table class="table-03">
           <tr>
             <th>
-              simply number your images and place them inside an images folder
+              <h2>
+                simply number your images and place them inside an images folder
+              </h2>
+              <div class="instructions">
+                &lt;div class=&quot;carousel-container&quot;&gt;<br />
+                &lt;button class=&quot;previous-image&quot;&gt;<br />
+                &lt;i class=&quot;fas fa-angle-left&quot;&gt;&lt;/i&gt;<br />
+                &lt;/button&gt;<br />
+                &lt;button class=&quot;next-image&quot;&gt;<br />
+                &lt;i class=&quot;fas fa-angle-right&quot;&gt;&lt;/i&gt;<br />
+                &lt;/button&gt;<br />
+                &lt;div class=&quot;carousel-slide&quot;&gt;<br />
+                &lt;img src=&quot;../images/01.jpg&quot; alt=&quot;image&quot;
+                /&gt;<br />
+                &lt;img src=&quot;../images/02.jpg&quot; alt=&quot;image&quot;
+                /&gt;<br />
+                &lt;img src=&quot;../images/03.jpg&quot; alt=&quot;image&quot;
+                /&gt;<br />
+                &lt;img src=&quot;../images/04.jpg&quot; alt=&quot;image&quot;
+                /&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;/div&gt;
+              </div>
             </th>
           </tr>
           <tr>
@@ -194,29 +196,6 @@
                   <img src="../images/04.jpg" alt="image" />
                 </div>
               </div>
-            </th>
-          </tr>
-          <tr>
-            <th>HTML</th>
-          </tr>
-          <tr>
-            <th>
-              <pre>
-                &lt;div class=&quot;carousel-container&quot;&gt;<br />
-                &lt;button class=&quot;previous-image&quot;&gt;<br />
-                  &lt;i class=&quot;fas fa-angle-left&quot;&gt;&lt;/i&gt;<br />
-                &lt;/button&gt;<br />
-                &lt;button class=&quot;next-image&quot;&gt;<br />
-                  &lt;i class=&quot;fas fa-angle-right&quot;&gt;&lt;/i&gt;<br />
-                &lt;/button&gt;<br />
-                &lt;div class=&quot;carousel-slide&quot;&gt;<br />
-                  &lt;img src=&quot;../images/01.jpg&quot; alt=&quot;image&quot; /&gt;<br />
-                  &lt;img src=&quot;../images/02.jpg&quot; alt=&quot;image&quot; /&gt;<br />
-                  &lt;img src=&quot;../images/03.jpg&quot; alt=&quot;image&quot; /&gt;<br />
-                  &lt;img src=&quot;../images/04.jpg&quot; alt=&quot;image&quot; /&gt;<br />
-                &lt;/div&gt;<br />
-              &lt;/div&gt;
-              </pre>
             </th>
           </tr>
         </table>

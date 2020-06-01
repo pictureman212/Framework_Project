@@ -7,61 +7,41 @@
     <title>English</title>
   </head>
   <body>
-    <header class="heading">
-      <div class="top-container">
-        <h1>RABASSA</h1>
-        <p>Be heard, in any language</p>
-      </div>
-
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
-              <span class="header-nav-link-content">
-                English
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
-              <span class="header-nav-link-content">
-                Espanol
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">
-              <span class="header-nav-link-content">
-                Pусский
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-          <li class="header-nav-item header-nav-item--guides">
-            <a class="header-nav-link js-toggle-simpleGuidesNav" href="#">
-              <span class="header-nav-link-content">
-                한국어
-                <span class="header-nav-link-border"></span>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav">
-        <div class="menu">
-          <a href="#"> <i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"> <i class="fab fa-youtube"></i></a>
+    <header class="navbar-full">
+      <div class="nav-wrapper">
+        <div class="logo raleway">
+          <h1>Rabassa</h1>
+          <p>Tell your story, in any language</p>
         </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul>
+            <li class="link"><a href="#">English</a></li>
+            <li class="link"><a href="#">Espanol</a></li>
+            <li class="link"><a href="#">Pусский</a></li>
+            <li class="link"><a href="#">한국어</a></li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <!-- <span class="more">...</span> -->
+          <span></span>
+        </label>
       </div>
     </header>
 
     <!-- Main content -->
 
-    <main class="flexible-container">
+    <main class="grid-row">
       <nav class="sidebar column-1">
         <ul class="sidebar-list">
           <li class="sidebar-item">
@@ -167,8 +147,40 @@
         </ul>
       </nav>
 
-      <div class="big-content column-2">
-        <table>
+      <div class="column-3">
+        <h2>Tables</h2>
+        <table class="table-03">
+          <tr>
+            <th></th>
+          </tr>
+          <tr>
+            <th>
+              <div class="instructions">
+                &lt;table class=&quot;table-01&quot;&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Luke Skywalker&lt;/td&gt;<br />
+                &lt;td&gt;Berlin&lt;/td&gt;<br />
+                &lt;td&gt;Germany&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Han Solo&lt;/td&gt;<br />
+                &lt;td&gt;Mexico City&lt;/td&gt;<br />
+                &lt;td&gt;Mexico&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Boba Fett&lt;/td&gt;<br />
+                &lt;td&gt;Vienna&lt;/td&gt;<br />
+                &lt;td&gt;Austria&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Darth Vader&lt;/td&gt;<br />
+                &lt;td&gt;London&lt;/td&gt;<br />
+                &lt;td&gt;UK&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;/table&gt;
+              </div>
+            </th>
+          </tr>
           <tr>
             <th>
               <table class="table-01">
@@ -196,7 +208,32 @@
             </th>
           </tr>
           <tr>
-            <th></th>
+            <th>
+              <div class="instructions">
+                &lt;table class=&quot;table-02&quot;&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Luke Skywalker&lt;/td&gt;<br />
+                &lt;td&gt;Berlin&lt;/td&gt;<br />
+                &lt;td&gt;Germany&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Han Solo&lt;/td&gt;<br />
+                &lt;td&gt;Mexico City&lt;/td&gt;<br />
+                &lt;td&gt;Mexico&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Boba Fett&lt;/td&gt;<br />
+                &lt;td&gt;Vienna&lt;/td&gt;<br />
+                &lt;td&gt;Austria&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Darth Vader&lt;/td&gt;<br />
+                &lt;td&gt;London&lt;/td&gt;<br />
+                &lt;td&gt;UK&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;/table&gt;
+              </div>
+            </th>
           </tr>
           <tr>
             <th>
@@ -225,7 +262,32 @@
             </th>
           </tr>
           <tr>
-            <th></th>
+            <th>
+              <div class="instructions">
+                &lt;table class=&quot;table-03&quot;&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Luke Skywalker&lt;/td&gt;<br />
+                &lt;td&gt;Berlin&lt;/td&gt;<br />
+                &lt;td&gt;Germany&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Han Solo&lt;/td&gt;<br />
+                &lt;td&gt;Mexico City&lt;/td&gt;<br />
+                &lt;td&gt;Mexico&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Boba Fett&lt;/td&gt;<br />
+                &lt;td&gt;Vienna&lt;/td&gt;<br />
+                &lt;td&gt;Austria&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;tr&gt;<br />
+                &lt;td&gt;Darth Vader&lt;/td&gt;<br />
+                &lt;td&gt;London&lt;/td&gt;<br />
+                &lt;td&gt;UK&lt;/td&gt;<br />
+                &lt;/tr&gt;<br />
+                &lt;/table&gt;
+              </div>
+            </th>
           </tr>
           <tr>
             <th>

@@ -24,28 +24,29 @@
 .par-ex01 {
   position: absolute;
   background-color: red($color: #000000);
-  top: 90%;
-  right: 10%;
+  top: 10%;
+  right: 70%;
 }
 
 .par-ex02 {
   position: absolute;
 
   top: 10%;
-  right: 30%;
+  right: 40%;
 }
 
 .par-ex03 {
   position: absolute;
 
-  top: 5%;
-  right: 20%;
+  top: 10%;
+  right: 10%;
 }
 
 .par-example-container {
   display: flex;
   height: 300px;
   overflow: hidden;
+
   background: rgb(236, 229, 120);
 }
 .instructions {
