@@ -16,6 +16,14 @@
         // float: left;
         // padding: .5em 1em;
         margin-left: 2%;
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 1.25em;
+            opacity: .75;
+            background-color: #fff;
+        }
+        
     }
     .column-1 {
         @extend %column;
@@ -79,7 +87,6 @@
     }    
     .box-this {
         border: 1px solid #000;
-        border-radius: 10px;
         background-color: #666;
     }
 }

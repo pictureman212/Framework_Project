@@ -655,6 +655,14 @@ img {
   margin-left: 2%;
 }
 
+.grid-row .column-1 h1, .grid-row .column-2 h1, .grid-row .column-3 h1, .grid-row .column-4 h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  opacity: .75;
+  background-color: #fff;
+}
+
 .grid-row .column-1 {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
@@ -742,7 +750,6 @@ img {
 
 .grid-row .box-this {
   border: 1px solid #000;
-  border-radius: 10px;
   background-color: #666;
 }
 
