@@ -407,7 +407,8 @@ img {
 }
 
 .navbar-full {
-  background-color: #9c9c9c;
+  background: -webkit-gradient(linear, left top, right top, from(#acacac), color-stop(25%, #cccccc), color-stop(50%, #a1a1a1), color-stop(75%, #cccccc), to(#acacac));
+  background: linear-gradient(90deg, #acacac 0%, #cccccc 25%, #a1a1a1 50%, #cccccc 75%, #acacac 100%);
   padding: .5em;
   text-align: center;
   width: 100%;
@@ -655,7 +656,7 @@ img {
   margin-left: 2%;
 }
 
-.grid-row .column-1 h1, .grid-row .column-2 h1, .grid-row .column-3 h1, .grid-row .column-4 h1 {
+.grid-row .column-1 h1.heading, .grid-row .column-2 h1.heading, .grid-row .column-3 h1.heading, .grid-row .column-4 h1.heading {
   width: 100%;
   text-align: center;
   font-size: 1.25em;
@@ -768,6 +769,14 @@ img {
   .grid-row-no-margins {
     margin: 0 !important;
   }
+}
+
+.grid-row-no-margins .column-1, .grid-row-no-margins .column-2, .grid-row-no-margins .column-3, .grid-row-no-margins .column-4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  opacity: .75;
+  background-color: #fff;
 }
 
 .grid-row-no-margins .column-1 {
@@ -927,5 +936,54 @@ img {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border: none;
+}
+
+.parallax-container {
+  width: 100%;
+  position: relative;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.intro-text {
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+  position: absolute;
+}
+
+.parallax-large, .parallax-med, .parallax-small {
+  position: absolute;
+  -webkit-transition: ease;
+  transition: ease;
+}
+
+.parallax-large {
+  -webkit-transform: translate(-10%, 90%);
+          transform: translate(-10%, 90%);
+}
+
+.parallax-med {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  -webkit-transform: translate(-15%, 90%);
+          transform: translate(-15%, 90%);
+}
+
+.parallax-small {
+  position: absolute;
+  top: 5%;
+  right: 25%;
+  -webkit-transform: translate(-20%, 90%);
+          transform: translate(-20%, 90%);
+}
+
+.parallax-fast,
+.parallax-faster,
+.parallax-fastest {
+  -webkit-transition: ease;
+  transition: ease;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -16,7 +16,7 @@
         // float: left;
         // padding: .5em 1em;
         margin-left: 2%;
-        h1 {
+        h1.heading {
             width: 100%;
             text-align: center;
             font-size: 1.25em;
@@ -99,7 +99,15 @@
     @include bp-small {
         margin: 0 !important;
     }
+    %h1.heading {
+        width: 100%;
+        text-align: center;
+        font-size: 1.25em;
+        opacity: .75;
+        background-color: #fff;
+    }
     .column-1 {
+        @extend %h1.heading;
         flex-basis: 25%;
         max-width: 25%;
         @include bp-medium {
@@ -112,6 +120,7 @@
         }
     }
     .column-2 {
+        @extend %h1.heading;
         flex-basis: 50%;
         max-width: 50%;
         @include bp-small {
@@ -120,6 +129,7 @@
         }
     }
     .column-3 {
+        @extend %h1.heading;
         flex-basis: 75%;
         max-width: 75%;
         @include bp-medium {
@@ -132,6 +142,7 @@
         }
     }
     .column-4 {
+        @extend %h1.heading;
         flex-basis: 100%;
         max-width: 100%;
     }    
