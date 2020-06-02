@@ -141,7 +141,7 @@ button, .button-xsmall, .button-small, .button-large, .button-xlarge {
   cursor: pointer;
   border: 1px solid black;
   border-radius: 4px;
-  color: black;
+  color: #000;
   outline: none;
 }
 
@@ -265,16 +265,18 @@ img {
 
 /*nav bar*/
 :root {
-  --background: rgba(211, 211, 211, .85);
+  --background: rgba(211, 211, 211, 0.85);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .navbar-base, .navbar-dark {
-  padding: .5em;
+  padding: 0.5em;
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -287,7 +289,7 @@ img {
 
 .navbar-base a, .navbar-dark a {
   color: #555;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
 }
 
@@ -301,11 +303,11 @@ img {
 }
 
 .navbar-base .header-nav-link, .navbar-dark .header-nav-link {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .navbar-base li a:active, .navbar-dark li a:active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -316,15 +318,15 @@ img {
 }
 
 .navbar-full {
-  background-color: #9c9c9c;
-  padding: .5em;
+  background-color: #395579;
+  padding: 0.5em;
   text-align: center;
   width: 100%;
   position: relative;
 }
 
 .navbar-full :root {
-  --background: rgba(211, 211, 211, .85);
+  --background: rgba(211, 211, 211, 0.85);
 }
 
 .navbar-full body {
@@ -333,7 +335,9 @@ img {
   font-family: sans-serif;
 }
 
-.navbar-full *, .navbar-full *::before, .navbar-full *::after {
+.navbar-full *,
+.navbar-full *::before,
+.navbar-full *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -386,7 +390,7 @@ img {
 
 .navbar-full .nav-toggle-label span::before,
 .navbar-full .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -404,6 +408,15 @@ img {
   grid-column: 2 / 3;
   margin: 0;
   padding: 0;
+  text-align: left;
+  color: #d2d7df;
+}
+
+.navbar-full .logo img {
+  width: 40px;
+  height: auto;
+  float: left;
+  margin-right: 4px;
 }
 
 .navbar-full nav {
@@ -435,7 +448,7 @@ img {
 .navbar-full nav a {
   display: block;
   color: #fff;
-  padding: 1em .5em;
+  padding: 1em 0.5em;
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -501,14 +514,14 @@ img {
         justify-content: space-around;
   }
   .navbar-full nav li {
-    margin: 0 .4em;
+    margin: 0 0.4em;
   }
   .navbar-full nav a {
     opacity: 1;
     position: relative;
   }
   .navbar-full nav a::before {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background: black;
@@ -990,7 +1003,9 @@ img {
 
 .instructions {
   text-align: left;
-  font-size: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+  background-color: rgba(60, 105, 145, 0.3);
 }
 
 .image-example-container {
@@ -1002,6 +1017,27 @@ img {
 .image-example {
   width: 30%;
   margin-left: 15px;
+}
+
+.attention {
+  background-color: #bc4123;
+}
+
+.attention a {
+  text-decoration: none;
+  color: #0c2d58;
+  padding: 20px;
+}
+
+.rabassa-main {
+  background-image: url("../images/globe03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-example {
+  font-size: 30px;
+  letter-spacing: 10px;
 }
 
 .image-normal {

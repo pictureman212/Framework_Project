@@ -51,7 +51,9 @@
 }
 .instructions {
   text-align: left;
-  font-size: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+  background-color: rgba(60, 105, 145, 0.3);
 }
 
 .image-example-container {
@@ -63,5 +65,26 @@
 }
 
 .attention {
-  background: rgb(238, 180, 54);
+  background-color: $attention;
+  a {
+    text-decoration: none;
+    color: $darkBlue;
+    padding: 20px;
+  }
 }
+
+.rabassa-main {
+  background-image: url("../images/globe03.png");
+  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-example {
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+// main {
+//   background: $mutedBlue;
+// }
