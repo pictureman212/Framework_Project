@@ -328,7 +328,7 @@ img {
 }
 
 .нав-полный {
-  background-color: #9c9c9c;
+  background-color: #781616;
   padding: 0.5em;
   text-align: center;
   width: 100%;
@@ -418,6 +418,14 @@ img {
   grid-column: 2 / 3;
   margin: 0;
   padding: 0;
+  text-align: left;
+}
+
+.нав-полный .логотип img {
+  width: 40px;
+  height: auto;
+  float: left;
+  margin-right: 4px;
 }
 
 .нав-полный nav {
